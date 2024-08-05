@@ -51,3 +51,156 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+.contact-row {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 20px;
+}
+
+.contact-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-item:hover {
+    background-color: #555;
+}
+.contact-row {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 20px;
+}
+
+.contact-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-item:hover {
+  background-color: #555;
+}
+.contact-row {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 20px;
+}
+
+.contact-item {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-item:hover {
+  background-color: #555;
+}
+
+.contact-info {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #444;
+  color: #e2e2e2;
+  padding: 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.contact-item:hover .contact-info {
+  display: block;
+}
+.contact-row {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 20px;
+}
+
+.contact-item {
+  position: relative;
+  color: #777; /* Changed to pleasant gray */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: 1px solid transparent; /* Removed outlines */
+}
+
+.contact-item:hover {
+  background-color: #555;
+}
+
+.contact-info {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.contact-item:hover .contact-info {
+  display: block;
+}
+.contact-row {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 20px;
+}
+
+.contact-item {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: 1px solid transparent;
+}
+
+.contact-item:hover {
+    background-color: #555;
+}
+
+.contact-info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #444;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.contact-item:hover .contact-info {
+    display: block;
+}
+# Portfoli
