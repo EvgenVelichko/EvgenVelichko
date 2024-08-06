@@ -33,8 +33,6 @@ nav ul li a {
   color: yellow;
 }
 
-
-
 .heder_container {
   display: flex;
   width: 100%;
@@ -216,4 +214,51 @@ a.email-link {
 
 .contact-item:hover .contact-info {
   display: block;
+}
+#projects {
+  padding: 20px;
+  background-color: #201e1ed2;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  position: relative;
+  width: calc(33.333% - 20px);
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+  color: yellow;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #bcc720;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project:hover .description {
+  opacity: 1;
+}
+.Info h4 {
+  color:#D0D2D4
 }
