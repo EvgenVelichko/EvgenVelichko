@@ -260,8 +260,59 @@ a.email-link {
   opacity: 1;
 }
 .Info h4 {
-  color :#D0D2D4
+  color: #d0d2d4;
 }
 .Stati h1 {
-  color: #D0D2D4
+  color: #d0d2d4;
+}
+
+.translation-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.translation-button label {
+  color: #fff;
+  padding: 3px 343px;
+  cursor: pointer;
+  font-size: 27px;
+  display: inline-block;
+  text-align: center;
+  padding-left: 41px;
+  width: 575px;
+}
+
+.translation-button input[type="checkbox"] {
+  display: none;
+}
+
+.language-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #333;
+  border: 1px solid #444;
+  z-index: 1000;
+}
+
+.language-menu a {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.language-menu a:hover {
+  background-color: #444;
+}
+
+#toggle-menu:checked ~ .language-menu {
+  display: block;
+}
+
+.translation-button img {
+  width: 20px;
+  height: 20px;
 }
