@@ -317,10 +317,15 @@ a.email-link {
   height: 47px;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.container {
+    padding: 20px;
 }
 
 
@@ -330,6 +335,9 @@ body {
     }
     .container {
         padding: 10px;
+    }
+    .contact-methods {
+        font-size: 14px;
     }
 }
 
@@ -341,4 +349,8 @@ body {
     .container {
         padding: 5px;
     }
+    .contact-methods {
+        font-size: 12px;
+    }
 }
+
