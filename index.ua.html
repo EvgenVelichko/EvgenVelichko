@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо Євгеній Величко</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header>
@@ -21,9 +23,10 @@
             <li><a href="#skills">Навички</a></li>
             <li><a href="#portfolio">Статті</a></li>
             <div class="translation-button">
+            <img src="./src/assets/icon.png" alt="">
+            <div class="translation-button">
               <input type="checkbox" id="toggle-menu">
               <label for="toggle-menu">
-                Перевод
               </label>
               <div class="language-menu">
                 <a href="index.html">English</a>
@@ -35,6 +38,7 @@
         </nav>
       </div>
       <div class="hero">
+        <data-aos="fade-left">
         <h1>Євгеній Величко</h1>
         <p>Початківець у веб/розробці</p>
       </div>
@@ -82,15 +86,16 @@ JavaScript: Почав вивчати JavaScript для додавання ін�
             
         </div>
         <div class="contact-item">
-            <a href="https://www.facebook.com/profile.php?id=61563866128911" class="facebook-link">Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=61563866128911"target=“_blank” class="facebook-link">Facebook</a>
         </div>
         <div class="contact-item">
-            <a href="https://www.instagram.com/minegair/" class="instagram-link">Instagram</a>        
-
-
+            <a href="https://www.instagram.com/minegair/"target=“_blank” class="instagram-link">Instagram</a>        
           </div>
     </div>
 </section>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
     </footer>
