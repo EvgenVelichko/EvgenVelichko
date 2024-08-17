@@ -4,12 +4,13 @@
     <link
       rel="shortcut icon"
       href="./src/assets/favicon.png"
-      type="image/x-icon"
-    />
+      type="image/x-icon"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio of Evgen Velichko</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header>
@@ -20,28 +21,30 @@
             <li><a href="#about">About me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Article</a></li>
-            <div class="translation-button">
-              <input type="checkbox" id="toggle-menu">
-              <label for="toggle-menu">
-                <img src="./src/assets/icon.png" alt="">
-              </label>
-              <div class="language-menu">
-                <a href="index.html">English</a>
-                <a href="index.ua.html">Українська</a>
+          
             
               </div>
             </div>
           </ul>
         </nav>
       </div>
-      <div class="hero">
+      <div class="hero" data-aos="fade-left">
         <h1>Evgen Velichko</h1>
         <p>Beginner in web/development</p>
+        <div class="translation-button">
+          <img src="./src/assets/icon.png" alt="">
+          <div class="translation-button">
+            <input type="checkbox" id="toggle-menu">
+            <label for="toggle-menu">
+            </label>
+            <div class="language-menu">
+              <a href="index.html">English</a>
+              <a href="index.ua.html">Українська</a>
       </div>
     </header>
     <section id="skills">
       <h2>About me</h2>
-      <div class="Info">
+      <div class="Info"data-aos="fade-right">
       <h4> Hello! My name is Evgen Velichko, I am 13 years old and I live in Ukraine. I'm a beginner in web development, but I already have some skills and projects that I want to share with you.
 
         What I can do:
@@ -57,7 +60,7 @@
       <section id="projects">
     <section id="projects">
       <h2>My Project Collection</h2>
-      <div class="gallery">
+      <div class="gallery"data-aos="fade-left">
           <div class="project">
               <a href="https://evgenvelichko.github.io/The-Money/" target="_blank">
                   <img src="./src/assets/project1.jpg.png" alt="The-Money">
@@ -67,8 +70,8 @@
           
       </div>
   </section>
-<div class="Stati">
-      <h2>My Latest Articlesі</h2>
+  <h2>My Latest Articlesі</h2>
+  <div class="Stati"data-aos="fade-left">
       <h1>Recent developments,I have created accounts on several social networks.I have uploaded two projects on Github and I am updating them.
 
 </div>
@@ -89,9 +92,13 @@
           </div>
     </div>
 </section>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
-    </footer>
+    
+</footer>
   </body>
 </html>
 
