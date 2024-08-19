@@ -4,6 +4,8 @@ body {
   padding: 0;
   background-color: #1a1a1a;
   color: #ffd700;
+  size: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -68,7 +70,7 @@ footer {
   border: 1px solid #fff;
   border-radius: 5px;
   transition: background-color 0.3s;
-list-style: none;
+  list-style: none;
 }
 
 .contact-item:hover {
@@ -274,10 +276,10 @@ a.email-link {
   position: absolute;
   top: 10px;
   right: 10px;
-    
+  position: absolute;
+  cursor: pointer;
+  
 }
-
-
 
 .translation-button label {
   color: #fff;
@@ -287,13 +289,18 @@ a.email-link {
   display: inline-block;
   text-align: center;
   padding-left: 41px;
-  width: 575px;
-    
+  width: 47px;
+  height: 47px;
+  top: -82.5px;
+  right: 8px;
+
 }
 
-
-.translation-button input[type="checkbox"] {
+.translation-button input[type="toggle-menu"] {
   display: none;
+  text-align: center;
+  
+
 }
 
 .language-menu {
@@ -302,8 +309,18 @@ a.email-link {
   top: 40px;
   right: 0;
   background-color: #333;
-  border: 1px solid #444;
+  border: 1px solid #ecebeb;
   z-index: 1000;
+  width: 47px;
+  height: 47px;
+  top: -82.5px;
+  right: 8px;
+  z-index: 1000;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 5px;
+  display: none;
+  cursor: pointer;
 }
 
 .language-menu a {
@@ -311,27 +328,42 @@ a.email-link {
   padding: 10px;
   display: block;
   text-decoration: none;
+  width: 47px;
+  height: 47px;
+  top: -82.5px;
+  right: 8px;
+  display: block;
 }
 
 .language-menu a:hover {
-  background-color: #444;
+  background-color: white
 }
 
 #toggle-menu:checked ~ .language-menu {
   display: block;
+  display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1000;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 5px;
 }
 
 .translation-button img {
+  display: block;
+  block-size: auto;
   width: 47px;
   height: 47px;
-    position: absolute; 
-    top: -82.5px; 
-    right: 8px; 
+  position: absolute;
+  top: -82.5px;
+  right: 8px;
 }
 
-  
-
-.Navigation  {
+.Navigation {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -347,23 +379,20 @@ a.email-link {
   padding: 20px;
 }
 .Navigation a:hover {
-  background-color: #d0d2d4; 
-  color: #333; 
-  border-radius: 5px; 
+  background-color: #d0d2d4;
+  color: #333;
+  border-radius: 5px;
   padding: 5px 10px;
   transition: background-color 0.3s, color 0.3s;
-
-
 }
 a.about-link {
-color: #e2e2e2;
-text-decoration: none;
-font-size: 18px;
-padding: 10px 20px;
-list-style: none;
-cursor: pointer;
-text-decoration: underline;
-
+  color: #e2e2e2;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  list-style: none;
+  cursor: pointer;
+  text-decoration: underline;
 }
 a.skills-link {
   color: #e2e2e2;
