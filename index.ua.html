@@ -17,14 +17,19 @@
   <body>
     <header>
       <div class="heder_container"data-aos="fade-right">
-        <img src="./src/assets/Logo.png" alt="" />
         <header>
-        <div class="burger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-    </header>
+          <div class="header-container">
+              <div class="logo">
+                  <div class="burger-menu">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+                  <img src="./src/assets/Logo.png" alt="Logo">
+              </div>
+          </div>
+      </header>
+      
         <nav class="nav-links">
           <a href="#about"target class="about-link">Про мене</a>
           <a href="#skills"target class="skills-link">Навички</a>
@@ -68,14 +73,30 @@ JavaScript: Почав вивчати JavaScript для додавання ін�
 </section>
     <section id="portfolio">
       <section id="projects">
-    <section id="projects">
-      <h2>Моя колекція проєктів</h2>
-      <div class="projects-container">
-        <div class="projects">
-          <div class="project"><img src="./src/assets/project1.png"The-Money alt=""></div>
-          <div class="project">Проект 2</div>
-          <div class="project">Проект 3</div>
-        </div>
+        <div class="project-section">
+          <h2>Моя коллекція проєктів</h2>
+          <div class="project-slider-wrapper">
+              <div class="project-slider">
+                  <div class="project active" id="project1">
+                      <img src="" alt="Проект 1">
+                  </div>
+                  <div class="project" id="project2">
+                      <img src="./src/assets/project1.png" alt="The-Money">
+                  </div>
+                  <div class="project" id="project3">
+                      <img src="" alt="Проект 2">
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="slider-controls">
+              <button class="prev" onclick="prevProject()">❮</button>
+              <button class="next" onclick="nextProject()">❯</button>
+          </div>
+      </div>
+      
+          </div>
+      </div>
         
       </div>
       
