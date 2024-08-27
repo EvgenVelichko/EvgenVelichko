@@ -1,142 +1,146 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="shortcut icon"
-      href="./src/assets/favicon.png"
-      type="image/x-icon"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфоліо Євгеній Величко</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="script" href="script.js">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="heder_container"data-aos="fade-right">
+    <head>
+        <link
+            rel="shortcut icon"
+            href="./src/assets/favicon.png"
+            type="image/x-icon" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Портфоліо Євгеній Величко</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="slider.css" />
+        <link rel="stylesheet" href="./scrollbar.css" />
+
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+
+    <body>
         <header>
-          <div class="header-container">
-              <div class="logo">
-                  <div class="burger-menu">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                  </div>
-                  <img src="./src/assets/Logo.png" alt="Logo">
-              </div>
-          </div>
-      </header>
-      
-        <nav class="nav-links">
-          <a href="#about"target class="about-link">Про мене</a>
-          <a href="#skills"target class="skills-link">Навички</a>
-          <a href="#portfolio"target class="portfolio-link">Статті</a>
-        </nav>
-        
-        <nav>
-        <ul>          
-              </div>
+            <div class="heder_container" data-aos="fade-right">
+                <header>
+                    <div class="header-container">
+                        <div class="logo">
+                            <div class="burger-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <img src="./src/assets/Logo.png" alt="Logo" />
+                        </div>
+                    </div>
+                </header>
+                <nav class="nav-links">
+                    <a href="#about" target class="about-link">Про мене</a>
+                    <a href="#skills" target class="skills-link">Навички</a>
+                    <a href="#portfolio" target class="portfolio-link"
+                        >Статті</a
+                    >
+                </nav>
             </div>
-          </ul>
-        </nav>
-      </div>
-      <div class="hero" data-aos="fade-left">
-        <h1>Євгеній Величко</h1>
-        <p>Початківець у веб/розробці</p>
-        <input type="checkbox" id="language-icon">
-        <label for="language-icon" class="language-icon-label">
-            <img src="./src/assets/icon.png" alt="Language Icon" class="language-icon">
-        </label>
-        <ul class="language-menu">
-            <li><a href="index.html">English</a></li>
-            <li><a href="./index.ua.html">Ukrainian</a></li>
-        </ul>
-      </div>
-    </header>
-    <div class="Info">
-      <section id="skills">
-      <h2>Про мене</h2>
-      <div class="Info"data-aos="fade-right">
-      <h4>   Привіт! Мене звати Євгеній Величко, мені 13 років, і я живу в Україні. Я початківець у веб-розробці, але вже маю деякі навички та проекти, якими хочу поділитися з вами.
-
-Що я вмію:
-
-HTML & CSS: Вмію створювати базові веб-сторінки з використанням HTML та CSS, додаючи стилі та структуру.
-JavaScript: Почав вивчати JavaScript для додавання інтерактивності на веб-сторінки.
-Проекти: Працюю над різними проектами, щоб покращити свої навички та створити щось корисне.
-    
-</h4>
-</div>
-</section>
-    <section id="portfolio">
-      <section id="projects">
-        <div class="project-section">
-          <h2>Моя коллекція проєктів</h2>
-          <div class="project-slider-wrapper">
-              <div class="project-slider">
-                  <div class="project active" id="project1">
-                      <img src="" alt="Проект 1">
-                  </div>
-                  <div class="project" id="project2">
-                      <img src="./src/assets/project1.png" alt="The-Money">
-                  </div>
-                  <div class="project" id="project3">
-                      <img src="" alt="Проект 2">
-                  </div>
-                  
-              </div>
-          </div>
-          <div class="slider-controls">
-              <button class="prev" onclick="prevProject()">❮</button>
-              <button class="next" onclick="nextProject()">❯</button>
-          </div>
-      </div>
-      
-          </div>
-      </div>
-        
-      </div>
-      
-        
-        
-    </div>
-      </div>
-      </div>
-  </section>
-</div>
-      </h1>
-    </section>
-    <footer>
-      <h2>Способи зв'язатися зі мною</h2>
-      <div class="contact-row">
-        <div class="contact-item">
-            <a href="mailto:evgenvelicko@gmail.com" class="email-link">evgenvelicko@gmail.com</a>
-            
+            <div class="hero" data-aos="fade-left">
+                <h1>Євгеній Величко</h1>
+                <p>Початківець у веб/розробці</p>
+                <input type="checkbox" id="language-icon" />
+                <label for="language-icon" class="language-icon-label">
+                    <img
+                        src="./src/assets/icon.png"
+                        alt="Language Icon"
+                        class="language-icon" />
+                </label>
+                <ul class="language-menu">
+                    <li><a href="index.html">English</a></li>
+                    <li><a href="./index.ua.html">Ukrainian</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="Info">
+            <section id="skills">
+                <h2>Про мене</h2>
+                <div class="Info" data-aos="fade-right">
+                    <h4>
+                        Привіт! Мене звати Євгеній Величко, мені 13 років, і я
+                        живу в Україні. Я початківець у веб-розробці, але вже
+                        маю деякі навички та проекти, якими хочу поділитися з
+                        вами. Що я вмію: HTML & CSS: Вмію створювати базові
+                        веб-сторінки з використанням HTML та CSS, додаючи стилі
+                        та структуру. JavaScript: Почав вивчати JavaScript для
+                        додавання інтерактивності на веб-сторінки. Проекти:
+                        Працюю над різними проектами, щоб покращити свої навички
+                        та створити щось корисне.
+                    </h4>
+                </div>
+            </section>
+            <section id="portfolio">
+                <section id="projects">
+                    <div class="project-section">
+                        <h2>Моя колекція проєктів</h2>
+                        <div class="project-slider-wrapper">
+                            <div class="project-slider">
+                                <div class="project active" id="project1">
+                                    <img
+                                        src="./src/assets/project1.png"
+                                        alt="Проект 1" />
+                                </div>
+                                <div class="project" id="project2">
+                                    <img
+                                        src="./src/assets/project1.png"
+                                        alt="The-Money" />
+                                </div>
+                                <div class="project" id="project3">
+                                    <img
+                                        src="./src/assets/project1.png"
+                                        alt="Проект 2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-controls">
+                            <button class="prev" onclick="prevProject()">
+                                ❮
+                            </button>
+                            <button class="next" onclick="nextProject()">
+                                ❯
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </section>
         </div>
-        <div class="contact-item">
-            <a href="https://www.facebook.com/profile.php?id=61563866128911"target=“_blank” class="facebook-link">Facebook</a>
-        </div>
-        <div class="contact-item">
-            <a href="https://www.instagram.com/minegair/"target=“_blank” class="instagram-link">Instagram</a>        
-          </div>
-    </div>
-</section>
-<script>
-  AOS.init();
-</script>
-<script src="./script.js"></script> 
-</body>
 
+        <footer>
+            <h2>Способи зв'язатися зі мною</h2>
+            <div class="contact-row">
+                <div class="contact-item">
+                </div>
+                <div class="contact-item">
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61563866128911"
+                        target="“_blank”"
+                        class="facebook-link"
+                        >Facebook</a
+                    >
+                </div>
+                <div class="contact-item">
+                    <a
+                        href="https://www.instagram.com/minegair/"
+                        target="“_blank”"
+                        class="instagram-link"
+                        >Instagram</a
+                    >
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            AOS.init();
+        </script>
+        <script src="./src/services/burger.js"></script>
+        <script src="./src/services/script.js"></script>
+        <script src="./src/services/slider.js"></script>
+    </body>
 </html>
-    </footer>
-  </body>
-</html>
-
-
-
-
-
-
