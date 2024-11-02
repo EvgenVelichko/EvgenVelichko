@@ -9,7 +9,7 @@
             type="image/x-icon" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Портфоліо Євгеній Величко</title>
+        <title>Порфоліо Євгеній Величко</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="slider.css" />
         <link rel="stylesheet" href="./scrollbar.css" />
@@ -21,6 +21,15 @@
     </head>
 
     <body>
+        <header>
+            <nav class="navbar">
+              <ul class="nav-links">
+                <li><a href="#about">Про мене</a></li>
+                <li><a href="#portfolio">Моє порфоліо</a></li>
+                <li><a href="#contact">Послуги</a></li>
+              </ul>
+            </nav>
+            </header>
         <header>
             <div class="heder_container" data-aos="fade-right">
                 <header>
@@ -42,7 +51,7 @@
             </div>
             <div class="hero" data-aos="fade-left">
                 <h1>Євгеній Величко</h1>
-                <p>Початківець у веб/розробці</p>
+                <p>Junior з веб-розробки</p>
                 <input type="checkbox" id="language-icon" />
                 <label for="language-icon" class="language-icon-label">
                     <img
@@ -61,25 +70,26 @@
                 <h2>Про мене</h2>
                 <div class="Info" data-aos="fade-right">
                     <h4>
-                        Привіт! Мене звати Євгеній Величко, мені 13 років, і я
-                        живу в Україні. Я початківець у веб-розробці, але вже
-                        маю деякі навички та проекти, якими хочу поділитися з
-                        вами. Що я вмію: HTML & CSS: Вмію створювати базові
-                        веб-сторінки з використанням HTML та CSS, додаючи стилі
-                        та структуру. JavaScript: Почав вивчати JavaScript для
-                        додавання інтерактивності на веб-сторінки. Проекти:
-                        Працюю над різними проектами, щоб покращити свої навички
-                        та створити щось корисне.
+                        Привіт! Мене звати Величко Євген, мені 13 років
+                        Я живу в Україні. Я студент із веб-розробки, але
+                        У мене вже є деякі навички та проекти, які я хочу
+                        поділитися з вами. Що я вмію: HTML і CSS: можу
+                        створювати базові веб-сторінки за допомогою HTML і CSS, додаючи стилі
+                        і структура. JavaScript: почав вивчати JavaScript
+                        щоб додати інтерактивність до веб-сторінок. Проекти: Працюю над
+                        різні проекти для вдосконалення моїх навичок і творчості
+                        щось корисне.
                     </h4>
                 </div>
             </section>
             <section id="portfolio">
                 <section id="projects">
                     <div class="project-section">
-                        <h2>Моя колекція проєктів</h2>
+                        <h2>Моє портфоліо</h2>
                         <div class="project-slider-wrapper">
                             <div class="project-slider">
                                 <div class="project active" id="project1">
+                                    
                                     <img
                                         src="./src/assets/project2png.png"
                                         alt="AudioPlayer" />
@@ -108,29 +118,52 @@
                 </section>
             </section>
         </div>
-
+        <section id="contact">
         <footer>
-            <h2>Способи зв'язатися зі мною</h2>
-            <div class="contact-row">
-                <div class="contact-item"></div>
-                <div class="contact-item">
-                    <a
-                        href="https://www.facebook.com/profile.php?id=61563866128911"
-                        target="“_blank”"
-                        class="facebook-link"
-                        >Facebook</a
-                    >
-                </div>
-                <div class="contact-item">
-                    <a
-                        href="https://www.instagram.com/minegair/"
-                        target="“_blank”"
-                        class="instagram-link"
-                        >Instagram</a
-                    >
-                </div>
-            </div>
-        </footer>
+            
+    <section id="services">
+        <h2 class="section-title">Послуги</h2>
+        <div class="services-list">
+          <div class="service-item">
+            <h3>Веб-дизайн</h3>
+            <p>Створення красивих і адаптивних веб-дизайнів відповідно до ваших потреб.</p>
+          </div>
+          <div class="service-item">
+            <h3>Веб-розробка</h3>
+            <p>Створення функціональних та ефективних веб-сайтів з використанням новітніх технологій.</p>
+          </div>
+          <div class="service-item">
+            <h3>SEO оптимізація</h3>
+            <p>Покращення видимості вашого сайту в пошукових системах, щоб залучити більше відвідувачів.</p>
+          </div>
+          <div class="service-item">
+            <h3>Створення контенту</h3>
+            <p>Створення цікавого контенту, щоб захопити й утримати вашу аудиторію.</p>
+          </div>
+        </div>
+      </section>
+      <div class="wayC">
+        </div>
+        <section id="contact">
+            <div class="contact-form-container">
+                <h2>Зв'яжіться зі мною</h2>
+                <form id="contact-form" action="/send-message" method="post">
+                  <div class="form-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">повідомлення</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <button type="submit"div class="sendB"> Надіслати</button>
+                </form>
+              </div>
+        
 
         <script>
             AOS.init();
@@ -138,5 +171,7 @@
         <script src="./src/services/burger.js"></script>
         <script src="./src/services/script.js"></script>
         <script src="./src/services/slider.js"></script>
+        <script src="./src/services/languageS.js"></script>
+        <script src="./src/services/server.js"></script>
     </body>
 </html>

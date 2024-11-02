@@ -12,7 +12,7 @@ body {
 header {
     background: #333;
     color: white;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -27,8 +27,8 @@ header {
 .logo img {
     position: absolute;
     width: 52px;
-    left: 0px;
-    top: 0px;
+    left: 10px;
+    top: -20px;
 }
 nav ul {
     list-style: none;
@@ -186,7 +186,7 @@ footer {
 .contact-row {
     display: flex;
     justify-content: space-around;
-    background-color: #333;
+    background-color: #555;
     padding: 20px;
 }
 
@@ -263,6 +263,7 @@ a.email-link {
 }
 .Info h2 {
     color: yellow;
+    text-align: center;
 }
 
 .Info h4 {
@@ -478,15 +479,15 @@ select:focus {
 }
 
 .language-icon {
+    position: absolute;
     transition: transform 0.3s;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 37px 30px;
+    padding: 64px 30px;
     width: 60px;
     height: 60px;
-    top: -23px;
-    right: 8px;
+    top: -20px;
+    right: -22px;
 }
 
 #language-icon:checked + .language-icon-label .language-icon {
@@ -671,8 +672,8 @@ body.lock-scroll {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    left: -33px;
-    top: 37px;
+    left: 48px;
+    top: -20px;
     width: 30px;
     height: 24px;
     cursor: pointer;
@@ -704,4 +705,300 @@ body.lock-scroll {
 
 .burger-menu.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.language-option {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.language-option:hover {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.header-section {
+    background-image: url('path-to-your-image.jpg');
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.contact-links a:hover {
+    color: #f39c12;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+.slider .navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider .navigation button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.slider .navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.age-calculation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 55px;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.language-option {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.language-option:hover {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service-item {
+    flex-basis: 45%;
+    background-color: #1a1a1a;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.wayC {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+    }
+    .contact-form-container h2 {
+        color: yellow;
+    }
+}
+.contact-form-container {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 1240px;
+}
+
+.contact-form-container h2 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ffcc00;
+}
+
+button {
+    opacity: 0.7;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 5%;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #f4ca1f;
+}
+.sendB{
+    background-color:#333 ;
+    color:#ffcc00;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
 }

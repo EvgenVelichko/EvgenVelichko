@@ -1,38 +1,36 @@
 /** @format */
 
-let lastRequestTime = 0;
-const requestInterval = 5000;
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', async event => {
+    event.preventDefault();
 
-function makeRequest() {
-    const currentTime = new Date().getTime();
-    if (currentTime - lastRequestTime > requestInterval) {
-        lastRequestTime = currentTime;
-    } else {
-        alert('Слишком много запросов. Пожалуйста, подождите.');
+    const formData = new FormData(form);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+    const telegramToken = '7568727513:AAEgjkP-XQE89qz1NhOYv85uZ3wwSz2QGKg';
+    const chatId = '1418643598';
+    const text = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+    try {
+        const response = await fetch(
+            `https://api.telegram.org/bot${telegramToken}/sendMessage`,
+            {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: chatId,
+                    text: text,
+                }),
+            },
+        );
+
+        if (response.ok) {
+            alert('Message sent successfully!');
+        } else {
+            alert('Failed to send message.');
+        }
+    } catch (error) {
+        alert('Error sending message.');
     }
-}
-const ipRequests = {};
-
-function checkIp(ip) {
-    const currentTime = new Date().getTime();
-    if (!ipRequests[ip]) {
-        ipRequests[ip] = [];
-    }
-    ipRequests[ip].push(currentTime);
-
-    ipRequests[ip] = ipRequests[ip].filter(
-        time => currentTime - time < requestInterval,
-    );
-
-    if (ipRequests[ip].length > 5) {
-        alert('Ваш IP заблокирован из-за подозрительной активности.');
-        return false;
-    }
-    return true;
-}
-
-function makeRequest(ip) {
-    if (checkIp(ip)) {
-        console.log('Запрос выполнен');
-    }
-}
+});
