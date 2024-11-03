@@ -930,20 +930,22 @@ body {
     transform: scale(1.05);
 }
 
-.wayC {
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: #333;
-        color: #fff;
-    }
-    .contact-form-container h2 {
-        color: yellow;
-    }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
+.contact-form-container h2 {
+    color: yellow;
+}
+
 .contact-form-container {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: #444;
     padding: 20px;
     border-radius: 10px;
@@ -953,7 +955,7 @@ body {
 }
 
 .contact-form-container h2 {
-    color: #ffcc00;
+    color: yellow;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1010,4 +1012,90 @@ button:hover {
     width: 100%;
     font-size: 18px;
     margin-top: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: 0.3s;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
 }
