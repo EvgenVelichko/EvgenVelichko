@@ -7,9 +7,9 @@ function showProject(index) {
     const totalProjects = projects.length;
 
     if (index >= totalProjects) {
-        currentProject = 0;
-    } else if (index < 0) {
         currentProject = totalProjects - 1;
+    } else if (index < 0) {
+        currentProject = 0;
     } else {
         currentProject = index;
     }

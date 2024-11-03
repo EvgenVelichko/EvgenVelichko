@@ -327,8 +327,8 @@ a.email-link {
     padding: 10px;
     display: block;
     text-decoration: none;
-    width: 47px;
-    height: 47px;
+    width: 30px;
+    height: 38px;
     top: -82.5px;
     right: 8px;
     display: block;
@@ -429,7 +429,7 @@ body {
     padding: 17px;
     list-style: none;
     right: 13px;
-    top: 20px;
+    top: 41px;
     border-radius: -13px;
     animation: slideDown 0.3s ease-in-out;
     size: 15px;
@@ -442,13 +442,22 @@ body {
 }
 
 .language-menu a {
+    text-align: justify;
     text-decoration: none;
     color: #ffffff;
     display: block;
     padding: 0px 0px;
     border-radius: 3px;
     background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+    color: rgb(203, 203, 203);
+    transition: color 0.3s, background-color 0.3s;
 }
+.language-menu a:hover {
+    color: white;
+    background-color: black;
+}
+
 select:focus {
     outline: none;
     border: none;
@@ -991,9 +1000,9 @@ button {
 button:hover {
     background-color: #f4ca1f;
 }
-.sendB{
-    background-color:#333 ;
-    color:#ffcc00;
+.sendB {
+    background-color: #333;
+    color: #ffcc00;
     padding: 15px;
     border: none;
     border-radius: 5px;
