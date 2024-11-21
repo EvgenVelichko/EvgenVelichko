@@ -225,9 +225,13 @@ button:hover {
 }
 
 .prev {
+    position: absolute;
+    text-align: center;
     left: 0;
 }
 
 .next {
+    position: absolute;
+    text-align: center;
     right: 0;
 }

@@ -90,10 +90,13 @@
                         <div class="project-slider-wrapper">
                             <div class="project-slider">
                                 <div class="project active" id="project1">
-                                    
+                                 
                                     <img
+                                  
                                         src="./src/assets/project2png.png"
+                                        
                                         alt="AudioPlayer" />
+                                        <a href="https://evgenvelichko.github.io/AudioPlayer/"></a>
                                 </div>
                                 <div class="project" id="project2">
                                     <img
@@ -142,11 +145,15 @@
             <p>Створення цікавого контенту, щоб захопити й утримати вашу аудиторію.</p>
           </div>
         </div>
-      </section>
+    </footer>
       <div class="wayC">
         </div>
+        
+        <div><div></div>
         <section id="contact">
-            <div class="contact-form-container">
+            
+          <div class="contact-form-container">
+                
                 <h2>Зв'яжіться зі мною</h2>
                 <form id="contact-form" action="/send-message" method="post">
                   <div class="form-group">
@@ -158,14 +165,17 @@
                     <input type="email" id="email" name="email" required>
                   </div>
                   <div class="form-group">
-                    <label for="message">повідомлення</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Повідомлення</label>
+                    <textarea name="повідомлення" placeholder="Ваше повідомлення"></textarea>
+
+
                   </div>
                   <button type="submit"div class="sendB"> Надіслати</button>
                 </form>
+                <div id="successMessage" class="hidden">Повідомлення відправлено</div>
               </div>
-        
-
+            </div>
+        </footer>
         <script>
             AOS.init();
         </script>
@@ -176,5 +186,6 @@
         <script src="./src/services/server.js"></script>
         <script src="./src/services/slider2.js"></script>
         <script src="./src/services/old.js"></script>
+        <script src="./src/services/text.js"></script>
     </body>
 </html>
