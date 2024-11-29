@@ -13,8 +13,7 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="slider.css" />
         <link rel="stylesheet" href="./scrollbar.css" />
-        <link rel="stylesheet" href="slider2.css">
-
+        <link rel="stylesheet" href="slider2.css" />
         <link
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet" />
@@ -24,30 +23,26 @@
     <body>
         <header>
             <nav class="navbar">
-              <ul class="nav-links">
-                <li><a href="#about">Про мене</a></li>
-                <li><a href="#portfolio">Моє порфоліо</a></li>
-                <li><a href="#contact">Послуги</a></li>
-              </ul>
+                <ul class="nav-links">
+                    <li><a href="#about">Про мене</a></li>
+                    <li><a href="#portfolio">Моє порфоліо</a></li>
+                    <li><a href="#contact">Послуги</a></li>
+                </ul>
             </nav>
-            </header>
-        <header>
             <div class="heder_container" data-aos="fade-right">
-                <header>
-                    <div class="header-container">
-                        <div class="logo">
-                            <div class="burger-menu">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <img src="./src/assets/Logo.png" alt="Logo" />
+                <div class="header-container">
+                    <div class="logo">
+                        <div class="burger-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
+                        <img src="./src/assets/Logo.png" alt="Logo" />
                     </div>
-                </header>
+                </div>
                 <nav class="nav-links">
-                    <a href="#about" target class="about-link">Про мене</a>
-                    <a href="#skills" target class="skills-link">Навички</a>
+                    <a href="#about" class="about-link">Про мене</a>
+                    <a href="#skills" class="skills-link">Навички</a>
                 </nav>
             </div>
             <div class="hero" data-aos="fade-left">
@@ -66,20 +61,22 @@
                 </ul>
             </div>
         </header>
+
         <div class="Info">
             <section id="skills">
                 <h2>Про мене</h2>
                 <div class="Info" data-aos="fade-right">
                     <h4>
-                        Привіт! Мене звати Величко Євген, мені <span id="age-display">13</span> років.
-                        Я живу в Україні. Я студент із веб-розробки, але
-                        У мене вже є деякі навички та проекти, які я хочу
-                        поділитися з вами. Що я вмію: HTML і CSS: можу
-                        створювати базові веб-сторінки за допомогою HTML і CSS, додаючи стилі
-                        і структура. JavaScript: почав вивчати JavaScript
-                        щоб додати інтерактивність до веб-сторінок. Проекти: Працюю над
-                        різні проекти для вдосконалення моїх навичок і творчості
-                        щось корисне.
+                        Привіт! Мене звати Величко Євген, мені
+                        <span id="age-display">13</span> років. Я живу в
+                        Україні. Я студент із веб-розробки, але у мене вже є
+                        деякі навички та проекти, які я хочу поділитися з вами.
+                        Що я вмію: HTML і CSS: можу створювати базові
+                        веб-сторінки за допомогою HTML і CSS, додаючи стилі і
+                        структура. JavaScript: почав вивчати JavaScript щоб
+                        додати інтерактивність до веб-сторінок. Проекти: Працюю
+                        над різні проекти для вдосконалення моїх навичок і
+                        творчості щось корисне.
                     </h4>
                 </div>
             </section>
@@ -90,13 +87,11 @@
                         <div class="project-slider-wrapper">
                             <div class="project-slider">
                                 <div class="project active" id="project1">
-                                 
                                     <img
-                                  
                                         src="./src/assets/project2png.png"
-                                        
                                         alt="AudioPlayer" />
-                                        <a href="https://evgenvelichko.github.io/AudioPlayer/"></a>
+                                    <a
+                                        href="https://evgenvelichko.github.io/AudioPlayer/"></a>
                                 </div>
                                 <div class="project" id="project2">
                                     <img
@@ -122,60 +117,65 @@
                 </section>
             </section>
         </div>
-        <section id="contact">
+
         <footer>
-            
-    <section id="services">
-        <h2 class="section-title">Послуги</h2>
-        <div class="services-list">
-          <div class="service-item">
-            <h3>Веб-дизайн</h3>
-            <p>Створення красивих і адаптивних веб-дизайнів відповідно до ваших потреб.</p>
-          </div>
-          <div class="service-item">
-            <h3>Веб-розробка</h3>
-            <p>Створення функціональних та ефективних веб-сайтів з використанням новітніх технологій.</p>
-          </div>
-          <div class="service-item">
-            <h3>SEO оптимізація</h3>
-            <p>Покращення видимості вашого сайту в пошукових системах, щоб залучити більше відвідувачів.</p>
-          </div>
-          <div class="service-item">
-            <h3>Створення контенту</h3>
-            <p>Створення цікавого контенту, щоб захопити й утримати вашу аудиторію.</p>
-          </div>
-        </div>
-    </footer>
-      <div class="wayC">
-        </div>
-        
-        <div><div></div>
-        <section id="contact">
-            
-          <div class="contact-form-container">
-                
-                <h2>Зв'яжіться зі мною</h2>
-                <form id="contact-form" action="/send-message" method="post">
-                  <div class="form-group">
-                    <label for="name">Ім'я</label>
-                    <input type="text" id="name" name="name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Електронна пошта</label>
-                    <input type="email" id="email" name="email" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Повідомлення</label>
-                    <textarea name="повідомлення" placeholder="Ваше повідомлення"></textarea>
-
-
-                  </div>
-                  <button type="submit"div class="sendB"> Надіслати</button>
-                </form>
-                <div id="successMessage" class="hidden">Повідомлення відправлено</div>
-              </div>
-            </div>
+            <section id="services">
+                <h2 class="section-title">Послуги</h2>
+                <div class="services-list">
+                    <div class="service-item">
+                        <h3>Веб-дизайн</h3>
+                        <p>
+                            Створення красивих і адаптивних веб-дизайнів
+                            відповідно до ваших потреб.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Веб-розробка</h3>
+                        <p>
+                            Створення функціональних та ефективних веб-сайтів з
+                            використанням новітніх технологій.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <h3>SEO оптимізація</h3>
+                        <p>
+                            Покращення видимості вашого сайту в пошукових
+                            системах, щоб залучити більше відвідувачів.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Створення контенту</h3>
+                        <p>
+                            Створення цікавого контенту, щоб захопити й утримати
+                            вашу аудиторію.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </footer>
+
+        <div class="contact-form-container">
+            <h2>Зв'яжіться зі мною</h2>
+            <form id="contact-form" action="/send-message" method="post">
+                <div class="form-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Ваше повідомлення"></textarea>
+                </div>
+                <button type="submit" class="sendB">Надіслати</button>
+            </form>
+        </div>
+
         <script>
             AOS.init();
         </script>

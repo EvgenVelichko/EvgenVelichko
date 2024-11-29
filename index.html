@@ -13,8 +13,7 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="slider.css" />
         <link rel="stylesheet" href="./scrollbar.css" />
- <link rel="stylesheet" href="slider2.css">
-
+        <link rel="stylesheet" href="slider2.css" />
         <link
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet" />
@@ -24,30 +23,28 @@
     <body>
         <header>
             <nav class="navbar">
-              <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">My Portfolio</a></li>
-                <li><a href="#contact">Services</a></li>
-              </ul>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">My Portfolio</a></li>
+                    <li><a href="#contact">Services</a></li>
+                </ul>
             </nav>
-            </header>
+        </header>
         <header>
-            <div class="heder_container" data-aos="fade-right">
-                <header>
-                    <div class="header-container">
-                        <div class="logo">
-                            <div class="burger-menu">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <img src="./src/assets/Logo.png" alt="Logo" />
+            <div class="header_container" data-aos="fade-right">
+                <div class="header-container">
+                    <div class="logo">
+                        <div class="burger-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
+                        <img src="./src/assets/Logo.png" alt="Logo" />
                     </div>
-                </header>
+                </div>
                 <nav class="nav-links">
-                    <a href="#about" target class="about-link">About me</a>
-                    <a href="#skills" target class="skills-link">Skills</a>
+                    <a href="#about" class="about-link">About me</a>
+                    <a href="#skills" class="skills-link">Skills</a>
                 </nav>
             </div>
             <div class="hero" data-aos="fade-left">
@@ -71,15 +68,16 @@
                 <h2>About me</h2>
                 <div class="Info" data-aos="fade-right">
                     <h4>
-                        Hello! My name is Evgen Velichko,I am <span id="age-display">13</span> years old.
-                        I live in Ukraine. I'm a Junior in web-development, but
-                        I already have some skills and projects that I want to
-                        share with you. What I can do: HTML & CSS: Able to
-                        create basic web pages using HTML and CSS, adding styles
-                        and structure. JavaScript: Started learning JavaScript
-                        to add interactivity to web pages. Projects: I work on
-                        various projects to improve my skills and create
-                        something useful.
+                        Hello! My name is Evgen Velichko,I am
+                        <span id="age-display">13</span> years old. I live in
+                        Ukraine. I'm a Junior in web-development, but I already
+                        have some skills and projects that I want to share with
+                        you. What I can do: HTML & CSS: Able to create basic web
+                        pages using HTML and CSS, adding styles and structure.
+                        JavaScript: Started learning JavaScript to add
+                        interactivity to web pages. Projects: I work on various
+                        projects to improve my skills and create something
+                        useful.
                     </h4>
                 </div>
             </section>
@@ -90,7 +88,6 @@
                         <div class="project-slider-wrapper">
                             <div class="project-slider">
                                 <div class="project active" id="project1">
-                                    
                                     <img
                                         src="./src/assets/project2png.png"
                                         alt="AudioPlayer" />
@@ -119,57 +116,84 @@
                 </section>
             </section>
         </div>
-        <section id="contact">
         <footer>
             <div>
-    <section id="services">
-        <h2 class="section-title">Services</h2>
-        <div class="services-list">
-          <div class="service-item">
-            <h3>Web Design</h3>
-            <p>Creating beautiful and responsive web designs to meet your needs.</p>
-          </div>
-          <div class="service-item">
-            <h3>Web Development</h3>
-            <p>Building functional and efficient websites using the latest technologies.</p>
-          </div>
-          <div class="service-item">
-            <h3>SEO Optimization</h3>
-            <p>Improving your website's visibility on search engines to attract more visitors.</p>
-          </div>
-          <div class="service-item">
-            <h3>Content Creation</h3>
-            <p>Crafting engaging content to captivate and retain your audience.</p>
-          </div>
-        </div>
-    </div>
-      </section>
-      <div class="wayC">
-        </div>
-        <div>
-            <div>
-        <section id="contact">
-            <div class="contact-form-container">
-                <h2>Contact Me</h2>
-                <form id="contact-form" action="/send-message" method="post">
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                  </div>
-                  <button type="submit"div class="sendB"> Send</button>
-                </form>
-              </div>
+                <section id="services">
+                    <h2 class="section-title">Services</h2>
+                    <div class="services-list">
+                        <div class="service-item">
+                            <h3>Web Design</h3>
+                            <p>
+                                Creating beautiful and responsive web designs to
+                                meet your needs.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Web Development</h3>
+                            <p>
+                                Building functional and efficient websites using
+                                the latest technologies.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h3>SEO Optimization</h3>
+                            <p>
+                                Improving your website's visibility on search
+                                engines to attract more visitors.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Content Creation</h3>
+                            <p>
+                                Crafting engaging content to captivate and
+                                retain your audience.
+                            </p>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
-
+            <div>
+                <div>
+                    <section id="contact">
+                        <div class="contact-form-container">
+                            <h2>Contact Me</h2>
+                            <form
+                                id="contact-form"
+                                action="/send-message"
+                                method="post">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        rows="5"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="sendB">
+                                    Send
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </footer>
         <script>
             AOS.init();
         </script>
