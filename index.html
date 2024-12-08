@@ -5,7 +5,7 @@
     <head>
         <link
             rel="shortcut icon"
-            href="./src/assets/favicon.webp"
+            href="./src/assets/./favicon.webp"
             type="image/x-icon" />
         <link
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
@@ -13,6 +13,9 @@
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link rel="stylesheet" href="slider.css" />
+        <link rel="stylesheet" href="contact.css" />
+        <link rel="stylesheet" href="scrollbar.css" />
         <link rel="stylesheet" href="style.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,11 +26,11 @@
             <div class="nav-content">
                 <img src="./src/assets/logo.webp" alt="EV Logo" class="logo" />
                 <div class="nav-links">
-                    <a href="#home">Главная</a>
-                    <a href="#about">Обо мне</a>
-                    <a href="#projects">Проекты</a>
-                    <a href="#certificates">Дипломы</a>
-                    <a href="#contact">Контакты</a>
+                    <a href="#home">Головна</a>
+                    <a href="#about">Про мене</a>
+                    <a href="#certificates">Дипломи</a>
+                    <a href="#projects">Проєкти</a>
+                    <a href="#contact">Контакти</a>
                 </div>
                 <div class="burger">
                     <i class="fas fa-bars"></i>
@@ -36,11 +39,11 @@
         </nav>
 
         <section class="hero" id="home">
-            <div class="hero-text" data-aos="fade-right">
-                <h1>Привет, я <span>Евгений</span></h1>
+            <div class="hero-text" data-aos="slide-right">
+                <h1>Вітаю, я <span>Євген</span></h1>
                 <p>
-                    Создаю современные веб-решения с фокусом на пользовательский
-                    опыт и производительность.
+                    Створюю сучасні веб-рішення з фокусом на користувацький
+                    досвід та продуктивність
                 </p>
             </div>
             <div class="profile-photo" data-aos="fade-left">
@@ -48,35 +51,38 @@
             </div>
         </section>
 
-        <section class="about-section" id="about" data-aos="fade-up">
-            <div class="about-content">
+        <section class="about-section" id="about">
+            <h2 class="section-heading" data-aos="slide-right">Про мене</h2>
+            <div class="about-content" data-aos="fade-up">
                 <div class="about-text">
-                    <h2>Обо мне</h2>
                     <p>
                         Мене звати Величко Євген, мені
                         <span id="age">13</span> років. Я живу в Україні. Я
-                        студент із веб-розробки, але у мене вже є деякі навички
-                        та проекти, які я хочу поділитися з вами.
+                        студент із веб-розробки, але в мене вже є деякі навички
+                        та проєкти, якими я хочу поділитися з вами.
                     </p>
-                    <p>Що я вмію:</p>
-                    <p>
-                        HTML і CSS: можу створювати базові веб-сторінки за
-                        допомогою HTML і CSS, додаючи стилі і структура.
-                    </p>
-                    <p>
-                        JavaScript: почав вивчати JavaScript щоб додати
-                        інтерактивність до веб-сторінок.
-                    </p>
-                    <p>
-                        Проекти: Працюю над різні проекти для вдосконалення моїх
-                        навичок і творчості щось корисне.
-                    </p>
+                    <h3>Мої навички:</h3>
+                    <ul class="skills-list">
+                        <li>
+                            HTML і CSS: можу створювати базові веб-сторінки за
+                            допомогою HTML і CSS, додаючи стилі і структуру.
+                        </li>
+                        <li>
+                            JavaScript: почав вивчати JavaScript щоб додати
+                            інтерактивність до веб-сторінок.
+                        </li>
+                        <li>
+                            Проєкти: Працюю над різними проєктами для
+                            вдосконалення моїх навичок і створення корисних
+                            речей.
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section class="slider-section" id="certificates">
-            <h2 data-aos="fade-up">Мои дипломы</h2>
+            <h2 class="section-heading" data-aos="slide-right">Мої дипломи</h2>
             <div class="slider">
                 <div class="slider-track">
                     <div class="slider-item">Диплом 1</div>
@@ -87,37 +93,67 @@
         </section>
 
         <section class="slider-section" id="projects">
-            <h2 data-aos="fade-up">Мои проекты</h2>
+            <h2 class="section-heading" data-aos="slide-right">Мої проєкти</h2>
             <div class="slider">
                 <div class="slider-track">
-                    <div class="slider-item">Проект 1</div>
-                    <div class="slider-item">Проект 2</div>
-                    <div class="slider-item">Проект 3</div>
+                    <div class="slider-item">
+                        <img
+                            src="./src/assets/Project/project1.webp"
+                            alt="Money Main Page" />
+                        <div class="project-title">Фінансовий портал</div>
+                    </div>
+                    <div class="slider-item">
+                        <img
+                            src="./src/assets/Project/project2.webp"
+                            alt="Ford Mustang Website" />
+                        <div class="project-title">Автомобільний блог</div>
+                    </div>
+                    <div class="slider-item">
+                        <img
+                            src="./src/assets/Project/project3.webp"
+                            alt="Music Player" />
+                        <div class="project-title">Музичний плеєр</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact-section" id="contact" data-aos="fade-up">
+        <section class="contact-section" id="contact">
+            <h2
+                class="section-heading"
+                data-aos="slide-right"
+                data-aos-duration="2000">
+                Контакти
+            </h2>
             <div class="contact-content">
-                <h2>Свяжитесь со мной</h2>
                 <div class="contact-icons">
-                    <a href="https://github.com/EvgenVelichko" target="_blank"
+                    <a
+                        href="https://github.com/EvgenVelichko"
+                        target="_blank"
+                        aria-label="Github"
                         ><i class="fab fa-github"></i
                     ></a>
                     <a
                         href="https://www.linkedin.com/in/evgen-velichko-755527338/"
                         target="_blank"
+                        aria-label="LinkedIn"
                         ><i class="fab fa-linkedin"></i
                     ></a>
-                    <a href="mailto:evgenvelicko4@email.com"
+                    <a href="mailto:example@email.com" aria-label="Email"
                         ><i class="fas fa-envelope"></i
                     ></a>
-                    <a href="https://t.me/username" target="_blank"
+                    <a
+                        href="https://t.me/EvgenVelicko"
+                        target="_blank"
+                        aria-label="Telegram"
                         ><i class="fab fa-telegram"></i
                     ></a>
                 </div>
             </div>
         </section>
+        <script src="./src/servises/slider.js"></script>
+        <script src="./src/servises/burger.js"></script>
+        <script src="./src/servises/old.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="./src/servises/script.js"></script>
     </body>
