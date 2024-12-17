@@ -1,3 +1,5 @@
+/** @format */
+
 :root {
     --primary: #2a2a2a;
     --secondary: #4a4a4a;
@@ -20,16 +22,16 @@ body {
     padding-top: 80px;
 }
 
-.nav {
+nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     background: rgba(42, 42, 42, 0.95);
     z-index: 1000;
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav-content {
@@ -38,26 +40,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    width: 50px;
-    height: auto;
+    padding: 0 1rem;
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .nav-links a {
     color: var(--text);
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
+    font-size: 0.9rem;
 }
 
 .nav-links a::before {
@@ -79,7 +80,7 @@ body {
 .nav-links a:hover {
     color: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
 }
 
 .burger {
@@ -113,7 +114,7 @@ body {
     background: var(--secondary);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.3s;
     position: relative;
 }
@@ -144,16 +145,20 @@ body {
     bottom: 0;
     background: linear-gradient(
         135deg,
-        rgba(255,255,255,0.1) 0%,
-        rgba(255,255,255,0) 100%
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0) 100%
     );
     pointer-events: none;
     border-radius: 20px;
 }
 
 @keyframes borderGlow {
-    0% { filter: blur(5px); }
-    100% { filter: blur(15px); }
+    0% {
+        filter: blur(5px);
+    }
+    100% {
+        filter: blur(15px);
+    }
 }
 
 .about-section {
@@ -176,9 +181,9 @@ body {
     margin: 0 auto;
     display: block;
     padding: 2rem;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .about-text {
@@ -226,11 +231,13 @@ body {
     overflow: hidden;
     position: relative;
     padding: 2rem 0;
+    touch-action: pan-x;
 }
 
 .slider-track {
     display: flex;
-    transition: transform 0.5s;
+    transition: transform 0.3s ease-out;
+    will-change: transform;
 }
 
 .slider-item {
@@ -244,9 +251,17 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
     overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.slider-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 .slider-item img {
@@ -255,6 +270,11 @@ body {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider-item:hover img {
+    transform: scale(1.05);
 }
 
 .slider-item .project-title {
@@ -307,16 +327,22 @@ body {
 .contact-icons a:hover {
     transform: translateY(-5px);
     background: var(--gradient);
-    box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-left: 0;
 }
 
 @media (max-width: 768px) {
-    body {
-        padding-top: 60px;
+    nav {
+        padding: 0.4rem;
     }
 
-    .nav {
-        padding: 0.5rem;
+    body {
+        padding-top: 60px;
     }
 
     .nav-links {
@@ -338,7 +364,7 @@ body {
         background: var(--primary);
         padding: 1rem;
         gap: 1rem;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
 
     .nav-links a {
@@ -393,11 +419,17 @@ body {
         margin-bottom: 2rem;
     }
 
-    .slider-item {
-        min-width: calc(100vw - 4rem);
-        height: 280px;
+    .slider {
+        padding: 1rem 0;
+        margin: 0 -1rem;
     }
-    
+
+    .slider-item {
+        min-width: calc(100vw - 2rem);
+        height: auto;
+        margin: 0 1rem;
+    }
+
     .slider-item img {
         height: 200px;
     }
@@ -416,6 +448,10 @@ body {
 
     .contact-icons a {
         font-size: 1.5rem;
+    }
+
+    .logo {
+        height: 48px;
     }
 }
 
@@ -441,5 +477,9 @@ body {
 
     .contact-icons {
         gap: 1rem;
+    }
+
+    .logo {
+        height: 40px;
     }
 }
