@@ -1,0 +1,23 @@
+@import '../base/variables';
+
+
+/** @format */
+
+.slider-section {
+    padding: 2rem 0;
+
+    .slider {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        .slider-item {
+            background: $secondary-color;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+
+        }
+    }
+}

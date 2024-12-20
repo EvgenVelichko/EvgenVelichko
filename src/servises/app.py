@@ -20,7 +20,6 @@ def static_files(path):
 
 @app.route('/api/change-language', methods=['POST'])
 def change_language():
-    """API для смены языка."""
     data = request.json
     lang = data.get('lang', 'en')
     response = {
