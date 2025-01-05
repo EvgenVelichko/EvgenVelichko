@@ -44,7 +44,7 @@ function initializeMobileSlider(slider) {
         startTime = Date.now();
         startX = getPositionX(e);
 
-        // Get the current transform value
+
         const transform = window.getComputedStyle(track).transform;
         const matrix = new DOMMatrix(transform);
         prevTranslate = matrix.m41;
@@ -61,7 +61,7 @@ function initializeMobileSlider(slider) {
         const diff = currentX - startX;
         currentTranslate = prevTranslate + diff;
 
-        // Apply the transform
+
         track.style.transform = `translateX(${currentTranslate}px)`;
     }
 
@@ -104,7 +104,7 @@ function initializeMobileSlider(slider) {
         track.style.transform = `translateX(${nextPosition}px)`;
         track.style.cursor = 'grab';
 
-        // Update the prevTranslate for the next interaction
+
         prevTranslate = nextPosition;
         currentTranslate = nextPosition;
     }
@@ -117,7 +117,7 @@ function initializeMobileSlider(slider) {
     track.removeEventListener('mouseup', handleTouchEnd);
     track.removeEventListener('mouseleave', handleTouchEnd);
 
-    // Add the event listeners
+
     track.addEventListener('touchstart', handleTouchStart, { passive: false });
     track.addEventListener('touchmove', handleTouchMove, { passive: false });
     track.addEventListener('touchend', handleTouchEnd);
