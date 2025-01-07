@@ -131,10 +131,10 @@ nav .nav-content .lang-menu.active {
   justify-content: space-around;
   padding: 2rem;
 }
-.hero .hero-text {
+.hero-text {
   max-width: 1920px;
 }
-.hero .hero-text h1 {
+.hero-text h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
   background: var(--gradient);
