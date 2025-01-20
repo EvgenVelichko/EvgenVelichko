@@ -35,7 +35,7 @@ const translations = {
         nav: {
             home: 'Головна',
             about: 'Про мене',
-            certificates: 'Мої дипломи',
+            certificates: 'Дипломи',
             projects: 'Проєкти',
             contact: 'Контакти',
         },
@@ -43,7 +43,7 @@ const translations = {
             greeting: 'Вітаю, я',
             name: 'Євгеній.',
             description:
-                'Створюю сучасні веб-рішення з фокусом на користувацький досвід та продуктивність.',
+                'Створюю сучасні веб-рішення з фокусом на користувацький досвід  та продуктивність.',
         },
         about: {
             title: 'Про мене',
@@ -80,7 +80,7 @@ const translations = {
         nav: {
             home: 'Home',
             about: 'About',
-            certificates: 'My Certificates',
+            certificates: 'Certificates',
             projects: 'Projects',
             contact: 'Contact',
         },
