@@ -67,7 +67,7 @@ const translations = {
         },
         certificates: {
             cert1: 'Диплом 1',
-            cert2: 'Диплом 2',
+            cert2: 'Websites for schoolchildren',
             cert3: 'Диплом 3',
         },
         projects: {
@@ -112,7 +112,7 @@ const translations = {
         },
         certificates: {
             cert1: 'Certificate 1',
-            cert2: 'Certificate 2',
+            cert2: 'Websites for schoolchildren',
             cert3: 'Certificate 3',
         },
         projects: {
@@ -124,7 +124,6 @@ const translations = {
 };
 
 function changeLanguage(lang) {
-    // Update navigation links
     document.querySelector('a[href="#home"]').textContent =
         translations[lang].nav.home;
     document.querySelector('a[href="#about"]').textContent =
@@ -162,7 +161,7 @@ function changeLanguage(lang) {
         translations[lang].sections.certificates;
 
     const certificateItems = document.querySelectorAll(
-        '#certificates .slider-item',
+        '#certificates .slider-item .certificate-title',
     );
     certificateItems[0].textContent = translations[lang].certificates.cert1;
     certificateItems[1].textContent = translations[lang].certificates.cert2;
