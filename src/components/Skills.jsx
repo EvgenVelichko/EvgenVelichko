@@ -22,12 +22,12 @@ const Skill = ({ name, percentage }) => {
 
 export const Skills = () => {
   const [skills, setSkills] = useState([
-    { name: 'React', percentage: 90 },
-    { name: 'JavaScript', percentage: 85 },
+    { name: 'React', percentage: 25 },
+    { name: 'JavaScript', percentage: 80 },
     { name: 'HTML5', percentage: 95 },
-    { name: 'SCSS', percentage: 90 },
+    { name: 'SCSS', percentage: 80 },
     { name: 'Python', percentage: 75 },
-    { name: 'Git', percentage: 85 },
+    { name: 'Git', percentage: 95 },
   ]);
   const [error, setError] = useState(null);
 
