@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
     plugins: [react()],
-    base: '/evgenvelychko/',
+    base: '/evgenvelichko/',
     optimizeDeps: {
         exclude: ['lucide-react'],
     },
