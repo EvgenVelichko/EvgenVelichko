@@ -63,7 +63,7 @@ export const Hero: React.FC = () => {
                             <div className="relative w-full h-full aspect-[3/4] rounded-lg overflow-hidden border-2 border-amber-500/50">
                               
                                 <img
-                                    src="../../public/assets/Photo.png"
+                                    src="../../src/assets/Photo.png"
                                     alt="Professional portrait"
                                     className="w-full h-full object-cover"
                                 />
