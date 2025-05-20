@@ -1,11 +1,11 @@
 {
-    "name": "portfolio-website",
+    "name": "evgenvelychko",
     "private": true,
     "version": "0.0.0",
-    "homepage": "https://EvgenVelychko.github.io/EvgenVelychko",
+    "homepage": "https://evgenvelichko.github.io/evgenvelychko",
     "scripts": {
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "deploy": "gh-pages -d dist",
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview"
