@@ -3,6 +3,7 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
 
+
 export const Hero: React.FC = () => {
     return (
         <section
@@ -63,10 +64,9 @@ export const Hero: React.FC = () => {
                             <div className="relative w-full h-full aspect-[3/4] rounded-lg overflow-hidden border-2 border-amber-500/50">
                               
                                 <img
-                                    src="../../src/assets/Photo.png"
+                                    src=""
                                     alt="Professional portrait"
-                                    className="w-full h-full object-cover"
-                                />
+                                    className="w-full h-full object-cover"/>
                             </div>
                         </div>
                     </div>
