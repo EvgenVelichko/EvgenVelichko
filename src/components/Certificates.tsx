@@ -53,7 +53,7 @@ export const Certificates: React.FC = () => {
             title: 'Websites for schoolchildren',
             issuer: 'Ithillel',
             date: '30.12.2024',
-            image: '../../public/assets/certificates/Certificates.webp',
+            image: new URL('../assets/certificates/Certificates.webp', import.meta.url).href,
         },
         {
             title: 'Nothing',

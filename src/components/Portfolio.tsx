@@ -2,6 +2,12 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink, Github } from 'lucide-react';
+import project1 from '../assets/project/project1.webp';
+import project2 from '../assets/project/project2.webp';
+import project3 from '../assets/project/project3.webp';
+import project4 from '../assets/project/project4.webp';
+import project5 from '../assets/project/project5.webp';
+import project6 from '../assets/project/project6.webp';
 
 interface ProjectProps {
     title: string;
@@ -82,7 +88,8 @@ export const Portfolio: React.FC = () => {
             title: 'Money-Finance',
             description:
                 'Interactive dashboard for financial data visualization and analytics.',
-            image: '../../public/assets/project/project1.webp',
+            image: new URL('../assets/project/project1.webp', import.meta.url)
+                .href,
             tags: ['index.html', 'CSS', 'JavaScript'],
             liveLink: 'https://evgenvelichko.github.io/The-Money/',
             githubLink: 'https://evgenvelichko.github.io/The-Money/',
@@ -91,7 +98,8 @@ export const Portfolio: React.FC = () => {
             title: 'Car-Media',
             description:
                 'This website is dedicated to the legendary Ford Mustang. Here, you can find articles about the model’s history.',
-            image: '../../public/assets/project/project2.webp',
+            image: new URL('../assets/project/project2.webp', import.meta.url)
+                .href,
             tags: ['index.html', 'CSS', 'JavaScript'],
             liveLink: 'https://evgenvelichko.github.io/Products_Maket/',
             githubLink: 'https://github.com/EvgenVelichko/Products_Maket',
@@ -100,7 +108,8 @@ export const Portfolio: React.FC = () => {
             title: 'Minimal-Agency',
             description:
                 'Minimal is a full-service digital creative agency based in Ontario, Canada. Our passion is helping brands stand out in a competitive market.',
-            image: '../../public/assets/project/project3.png',
+            image: new URL('../assets/project/project3.png', import.meta.url)
+                .href,
             tags: ['index.html', 'CSS', 'JavaScript'],
             liveLink: 'https://evgenvelichko.github.io/Minimal-Agency/',
             githubLink: 'https://github.com/EvgenVelichko/Minimal-Agency',
@@ -109,7 +118,8 @@ export const Portfolio: React.FC = () => {
             title: 'NotePad',
             description:
                 'A sleek and functional text editor with a dark theme. It offers essential tools like saving, clearing, formatting, a built-in calculator.',
-            image: '../../public/assets/project/project4.png',
+            image: new URL('../assets/project/project4.png', import.meta.url)
+                .href,
             tags: ['index.html', 'CSS', 'JavaScript'],
             liveLink: 'https://evgenvelichko.github.io/Notepad/',
             githubLink: 'https://github.com/EvgenVelichko/Notepad',
@@ -118,7 +128,8 @@ export const Portfolio: React.FC = () => {
             title: 'CoWork',
             description:
                 'Coworking Space – A New Way to Work Discover a workspace designed for innovation and collaboration.',
-            image: '../../public/assets/project/project5.png',
+            image: new URL('../assets/project/project5.png', import.meta.url)
+                .href,
             tags: ['index.html', 'CSS', 'JavaScript'],
             liveLink: 'https://evgenvelichko.github.io/Cowork/',
             githubLink: 'https://github.com/EvgenVelichko/Cowork',
@@ -127,7 +138,7 @@ export const Portfolio: React.FC = () => {
             title: 'PasswordGenerator',
             description:
                 'This page is a password generator interface in Ukrainian. Users can create secure passwords by setting the length and choosing to include uppercase letters, lowercase letters, numbers, and symbols.',
-            image: '../../public/assets/project/project6.png',
+                image: new URL('../assets/project/project6.png', import.meta.url).href,
             tags: ['index.html', 'CSS', 'JavaScript'],
             liveLink: 'https://evgenvelichko.github.io/PasswordGenerator/',
             githubLink: 'https://github.com/EvgenVelichko/PasswordGenerator',
